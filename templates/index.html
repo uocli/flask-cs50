@@ -1,10 +1,18 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <form method="post" action="/">
+    <h1>Register</h1>
+    <form method="post" action="/register">
         <label>
             <input type="text" autocomplete="off" autofocus name="name" placeholder="Name">
+            <select name="sport">
+                <option disabled value="" selected>Sport</option>
+                <option value="football">Football</option>
+                <option value="basketball">Basketball</option>
+                <option value="baseball">Baseball</option>
+                <option value="hockey">Hockey</option>
+            </select>
         </label>
-        <button type="submit">Greet</button>
+        <button type="submit">Register</button>
     </form>
 {% endblock %}
